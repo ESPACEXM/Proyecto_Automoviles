@@ -1,0 +1,63 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.fondoHeader {
+    background-color: rgb(175, 78, 51);
+    padding: 10px;
+}
+
+footer {
+    
+    position: absolute !important;
+    bottom: 0 !important;
+    color: rgb(49, 71, 151) !important;
+    width: 100% !important;
+    height: 115px;
+    background: rgb(145, 140, 140) !important;
+    margin-bottom: -1px !important;
+}
+
+
+.top-bar-margen {
+    margin-top: -33px;
+}
+
+body {
+    background: rgb(73, 113, 148);
+}
+
+.menuOpciones {
+    background: #b8662b;
+
+
+}
+
+.menu_opcion {
+    color: rgb(255, 255, 255) !important;
+    width: 150px;
+
+}
+
+
+.h1 {
+    color: rgb(255, 255, 255) !important;
+    width: 500px;
+    padding: 30px;
+}
+h4{
+    font-size: 20px;
+    align-content: center;
+    color: black
+   
+}
