@@ -7,13 +7,13 @@ if(!$_SESSION['user_id']){
 #IMPORTANDO EL TEMPLATE
 
 #header
-include 'template/header.php';
+include 'template/header_vendedor.php';
 
 #Userinfo
-include 'template/userinfo.php';
+include 'template/userinfo_vendedor.php';
 
 #Barra de menús
-include 'template/menu.php'
+include 'template/menu_vendedor.php'
 ?>
 
 

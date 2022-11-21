@@ -4,7 +4,7 @@
 #A BASE DE DATOS
 
 
-define("SERVER", "127.0.0.1");
+define("SERVER", "localhost");
 define("USERDB", "usuariodba");
 define("PASSDB", "Sksakmak47");
 define("DATABASE", "sistema");

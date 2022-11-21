@@ -19,13 +19,14 @@
 
 footer {
     
-    position: absolute !important;
+    position: static;
     bottom: 0 !important;
     color: rgb(49, 71, 151) !important;
     width: 100% !important;
     height: 115px;
     background: rgb(145, 140, 140) !important;
     margin-bottom: -1px !important;
+    
 }
 
 
@@ -38,9 +39,7 @@ body {
 }
 
 .menuOpciones {
-    background: #b8662b;
-
-
+    background: #a66c43;
 }
 
 .menu_opcion {

@@ -15,13 +15,55 @@ class usuariosModel {
                         usuario,
                         password,                                                
                         estado 
-                FROM users ";
+                FROM users 
+                "
+                ;
+ 
+        $resultado = mysqli_query($conexion, $sql);
+        $conexionClass->desconectar($conexion);
+        return $resultado;
+    }
+
+    function getVehiculos(){
+        $conexionClass = new Tools();
+        $conexion = $conexionClass->conectar();
+
+        $sql = "SELECT id, puertas, color, año, numero_vin, numero_chasis, numero_placas
+        FROM sistema.vehiculos;
+
+        ";
+        
  
         $resultado = mysqli_query($conexion, $sql);
         $conexionClass->desconectar($conexion);
         return $resultado;
     }
     
+    function getTipo_vehiculo(){
+        $conexionClass = new Tools();
+        $conexion = $conexionClass->conectar();
+
+        $sql = "SELECT nombre
+        FROM sistema.tipo_vehiculo;
+        ";
+ 
+        $resultado = mysqli_query($conexion, $sql);
+        $conexionClass->desconectar($conexion);
+        return $resultado;
+    }
+    function getMarcas(){
+        $conexionClass = new Tools();
+        $conexion = $conexionClass->conectar();
+
+        $sql = "SELECT id, nombre, estado
+        FROM sistema.marca;
+        
+        ";
+ 
+        $resultado = mysqli_query($conexion, $sql);
+        $conexionClass->desconectar($conexion);
+        return $resultado;
+    }
 
     /**
      * Funcion para obtener el listado de usuarios

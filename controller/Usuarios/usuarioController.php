@@ -16,7 +16,7 @@ $eliminarUsuario = (isset($_POST['eliminar_usuario'])) ? $_POST['eliminar_usuari
 
 
 if($obtenerUsuario == 1){
-    $user_id = (isset($_POST|['user_id'])) ? $_POST['user_id'] : "0";
+    $user_id = (isset($_POST['user_id'])) ? $_POST['user_id'] : "0";
         
     $result = $usrClass->getUsuarioById($user_id);
 

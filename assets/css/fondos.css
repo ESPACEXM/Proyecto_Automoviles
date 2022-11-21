@@ -1,6 +1,8 @@
-
+body{
+    background: #172a45;
+}
   #leftPanel{
-    background-color:#155570;
+    background-color:#172450;
     color:#fff;
     text-align: center;
 }
@@ -10,6 +12,7 @@
 }
 
 .colorgraph {
+    
   height: 5px;
   border-top: 0;
   background: #c4e17f;
@@ -38,11 +41,29 @@
     font-size: 20px;
 }
 
-.update{
-    color: white;
-    background-color: blue;
-    width: 120px;
-    height: 50px;
-    border-radius: 25px;
-    font-size: 20px;
-}
+button {
+    padding: 1.3em 3em;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }

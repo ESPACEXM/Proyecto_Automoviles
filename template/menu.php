@@ -11,7 +11,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link active menu_opcion" aria-current="page" href="#">
+                    <a class="nav-link active menu_opcion" aria-current="page" href="main.php">
                         <i class="fa-solid fa-house-user"></i>
                         Inicio
                     </a>
@@ -19,33 +19,47 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Usuarios
+                        Vehiculos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item " href="#" onclick="cargarContenido('view/Usuarios/usuariosView.php');">Usuarios</a></li>                                                
+                        <li><a class="dropdown-item " href="view/Propietario/addvehiculoView.php">Agregar Vehiculo</a></li> 
+                        <li><a class="dropdown-item " href="view/Propietario/addmarcaView.php">Agregar Marca</a></li>    
+                        <li><a class="dropdown-item " href="view/Propietario/addmodeloView.php">Agregar Modelo</a></li>    
+                        <li><a class="dropdown-item " href="view/Propietario/addtipovehiculoView.php">Agregar tipo de Vehiculo</a></li>                                       
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Repuestos
+                        Roles
                     </a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item " href="view/Propietario/modrolesView.php">Modificar Roles</a></li> 
+                        
+                    </ul>
                  </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Autos
+                        Clientes
                     </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item " href="view/Propietario/addclienteView.php">Agregar Cliente</a></li> 
+                        <li><a class="dropdown-item " href="view/Propietario/modclienteView.php">Modificar Cliente</a></li>    
+                        <li><a class="dropdown-item " href="view/Propietario/deleteclienteView.php">Eliminar Cliente</a></li>    
+                    </li>                                       
+                    </ul>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Marcas
+                        Informes
                     </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item " href="view/Propietario/informes.php">Registros</a></li> 
+                        
+                    </ul>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Informacion
-                    </a>
+                    
                     
                 </li>
             </ul>

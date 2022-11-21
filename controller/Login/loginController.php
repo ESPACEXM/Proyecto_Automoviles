@@ -9,18 +9,30 @@ $loginModel = new loginModel();
 $usuario = $_POST['inUsuario'];
 $clave = $_POST['inPassword'];
 
-$result = array();
 
-$result = $loginModel->autenticar($usuario, $clave);
+
+
+$result = $loginModel->autenticar($usuario, $clave,);
+
 
 if($row = mysqli_fetch_array($result)){
     $_SESSION['user_id'] = $row['id'];
     $_SESSION['user_nombre'] = $row['nombres'];
     $_SESSION['user_apellido'] = $row['apellidos'];
     $_SESSION['username'] = $row['usuario'];
-    $_SESSION['user_rol'] = $row['rol'];
+    $_SESSION['roles'] = $row['roles_id'];
+          
 
-    header("location: ../../main.php");
+    switch($_SESSION['roles']){
+        case 1:
+            header('location: ../../main.php');
+            break;
+        case 2:
+            header('location: ../../vendedor.php');
+            break;
+    }
+    
+    
 }else{
 
     echo "<script>
@@ -30,6 +42,8 @@ if($row = mysqli_fetch_array($result)){
     exit(-1);
     
 }
+
+
 
 
 ob_end_flush();
