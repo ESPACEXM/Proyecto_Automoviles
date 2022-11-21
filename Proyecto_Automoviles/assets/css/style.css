@@ -1,0 +1,61 @@
+.divider::after, .divider::before{
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.h-custom{
+  height: calc(100% - 73px);
+}
+
+@media(max-width: 450px){
+  .h-custom{
+      height: 100%;
+  }
+}
+
+.tituloLogin{
+  font-size: 30px;
+}
+
+.alineacionLogo{
+  text-align: center;
+}
+
+.fa:hover {
+  opacity: 1.0;
+  border-radius: 35px;
+}
+
+.fa-instagram {
+  background: #8A3B90;
+  color: white;
+  border-radius: 35%;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  border-radius: 35%;
+
+
+}
+
+.fa-github {
+  background: #060100;
+  color: white;
+  border-radius: 35%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 65px;
+  width: 55px;
+  text-decoration: none;
+  margin: 5px 80px;
+}
+
+h1 {
+  color: green;
+}
